@@ -36,9 +36,9 @@ class CRUD:
         # Ping to verify connection
         try:
             self.client.admin.command('ping')
-            print("✅ Successfully connected to MongoDB Atlas!")
+            print(" Successfully connected to MongoDB Atlas!")
         except Exception as e:
-            print("❌ Connection failed:", e)
+            print(" Connection failed:", e)
 
     # C
     def create(self, data: dict):
